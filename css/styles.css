@@ -424,11 +424,15 @@ p {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .icons {
+  width: 64px;
+  height: 64px;
+}
+.icons-list {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 112px;
-  background-color: #f4f4fd;
+  background-color: var(--our-team);
   border-radius: 4px;
   margin-bottom: 8px;
 }
