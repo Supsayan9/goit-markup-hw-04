@@ -1,0 +1,373 @@
+/* Кольори */
+:root {
+  --bg-color: #ffffff;
+  --hero-background: #2e2f42;
+  --text: #434455;
+  --button-color-normal: #4d5ae5;
+  --button-color-hover: #404bbf;
+  --button-bg: #e7e9fc;
+  --our-team: #f4f4fd;
+  --nav: #e7e9fc;
+}
+/* Головна сторінка */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text);
+}
+/* Головна сторінка */
+/* ---------------------------------------------------------------------- */
+
+/* Допоміжні класси прибирання */
+/* ---------------------------------------------------------------------- */
+.link {
+  text-decoration: none;
+  display: block;
+}
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+img {
+  display: block;
+}
+/* Допоміжні класси прибирання */
+/* ---------------------------------------------------------------------- */
+
+/* Зміст-Меню */
+/* ---------------------------------------------------------------------- */
+.header-line {
+  border-bottom: 1px solid #e7e9fc;
+  display: flex;
+}
+.logo {
+  margin-right: 76px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  color: var(--button-color-normal);
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+.studio {
+  color: var(--hero-background);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+.menu {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--hero-background);
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border: 2px solid transparent;
+}
+.menu:hover,
+.menu:focus {
+  color: var(--button-color-hover);
+  border-bottom: 2px solid var(--button-color-hover);
+  border-radius: 2px;
+}
+.address {
+  margin-left: auto;
+  font-style: normal;
+}
+.contacts {
+  display: block;
+  color: var(--text);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  padding-bottom: 24px;
+  padding-top: 24px;
+}
+.contact-list {
+  gap: 40px;
+  display: flex;
+}
+.contacts:hover,
+.contacts:focus {
+  color: var(--button-color-hover);
+}
+/* Зміст-Меню */
+/* ---------------------------------------------------------------------- */
+
+/* Секція з кнопкою */
+/* ---------------------------------------------------------------------- */
+.section-main {
+  text-align: center;
+  background-color: var(--hero-background);
+  padding: 188px 0;
+}
+.main-text {
+  margin: 0 auto;
+  max-width: 496px;
+  margin-bottom: 48px;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  color: var(--bg-color);
+}
+.button {
+  display: block;
+  margin: 0 auto;
+  height: 56px;
+  min-width: 169px;
+  padding: 16px 32px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  background: var(--button-color-normal);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 4px;
+  color: var(--bg-color);
+  cursor: pointer;
+}
+.button:hover,
+.button:focus {
+  background: var(--button-color-hover);
+}
+/* Секція з кнопкою */
+/* ---------------------------------------------------------------------- */
+
+/* Текс і заголовок */
+/* ---------------------------------------------------------------------- */
+.content-header {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--hero-background);
+}
+.content {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--text);
+  border: 1px var(--button-bg);
+}
+.header-foto {
+  margin-top: 0;
+  margin-bottom: 72px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--hero-background);
+}
+/* Текс і заголовок */
+/* ---------------------------------------------------------------------- */
+
+/* Команда */
+/* ---------------------------------------------------------------------- */
+.our-team {
+  text-align: center;
+  background-color: var(--our-team);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 120px 0;
+}
+.team-header {
+  margin-bottom: 72px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--hero-background);
+}
+.team {
+  flex-basis: calc((100% - 72px) / 4);
+  flex: 1;
+}
+.team-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.hero-name {
+  background-color: var(--bg-color);
+  padding: 32px 16px;
+  border-radius: 0px 0px 4px 4px;
+}
+.hero-content {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--text);
+}
+.hero-header {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--hero-background);
+}
+/* Команда */
+/* ---------------------------------------------------------------------- */
+
+/* Футер */
+/* ---------------------------------------------------------------------- */
+.footer {
+  padding: 100px 0;
+  background-color: var(--hero-background);
+}
+.logo-footer {
+  color: var(--button-color-normal);
+  display: inline-block;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+.content-footer {
+  color: var(--bg-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  width: 264px;
+  margin-top: 0;
+}
+.studio-footer {
+  color: var(--our-team);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+/* Футер */
+/* ---------------------------------------------------------------------- */
+
+.buttons {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  background: var(--our-team);
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+  padding: 12px 24px;
+  color: var(--button-color-normal);
+  cursor: pointer;
+}
+.buttons:hover,
+.buttons:focus {
+  color: var(--bg-color);
+  background: var(--button-color-hover);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  border: none;
+  border: 1px solid transparent;
+}
+.buttons-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 72px;
+}
+.content-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.foto-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.menu-box {
+  display: inline-flex;
+}
+.container {
+  width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.section-content {
+  padding: 120px 0;
+}
+.foto {
+  padding-bottom: 120px;
+}
+.site-nav {
+  gap: 40px;
+  display: flex;
+}
+.menu-nav {
+  align-items: center;
+  display: flex;
+}
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+.card-set > .item {
+  width: calc((100% - 48px) / 3);
+}
+.container-menu {
+  align-items: center;
+  display: flex;
+  width: 1158px;
+}
+.content-item {
+  flex-basis: calc((100% - 72px) / 4);
+}
+.item-foto {
+  flex-basis: calc((100% - 48px) / 3);
+}
+.item-menu {
+  flex-basis: calc((100% - 3 * 24px) / 4);
+}
+.section {
+  padding: 96px 0 120px;
+}
+.item-lsit {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
+p {
+  margin: 0;
+}
