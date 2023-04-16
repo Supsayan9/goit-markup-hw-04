@@ -40,6 +40,8 @@ img {
 .header-line {
   border-bottom: 1px solid #e7e9fc;
   display: flex;
+  box-shadow: зі значенням 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .logo {
   margin-right: 76px;
@@ -112,9 +114,11 @@ img {
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/people-office.jpg);
-  width: 1440px;
+  max-width: 1440px;
   background-size: cover;
   padding: 188px 0;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .main-text {
   margin: 0 auto;
@@ -418,4 +422,13 @@ p {
 .shadows:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  background-color: #f4f4fd;
+  border-radius: 4px;
+  margin-bottom: 8px;
 }
