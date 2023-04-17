@@ -391,7 +391,9 @@ p {
   padding-bottom: 120px;
 }
 .customers-header {
+  color: var(--hero-background);
   font-weight: 700;
+  margin-bottom: 72px;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
@@ -437,4 +439,21 @@ p {
   background-color: var(--our-team);
   border-radius: 4px;
   margin-bottom: 8px;
+}
+.customers-item {
+  height: 88px;
+  width: calc((100% - 120px) / 6);
+}
+.customers-link {
+  border: 1px solid #8e8f99;
+  border-radius: зі значенням 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8e8f99;
+}
+.customers-link:hover,
+.customers-item:focus {
+  border-color: #404bbf;
+  color: #404bbf;
 }
