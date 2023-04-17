@@ -455,7 +455,7 @@ p {
   border-radius: 4px;
 }
 .customers-link:hover,
-.customers-item:focus {
+.customers-link:focus {
   border-color: var(--button-color-hover);
   color: var(--button-color-hover);
 }
