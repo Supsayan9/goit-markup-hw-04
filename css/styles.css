@@ -216,6 +216,9 @@ header {
 .team {
   flex-basis: calc((100% - 72px) / 4);
   flex: 1;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 .team-box {
   display: flex;
@@ -417,7 +420,8 @@ p {
   height: 40px;
 }
 .social-item {
-  color: var(--button-color-normal);
+  width: 40px;
+  height: 40px;
 }
 .media-header {
   color: var(--bg-color);
@@ -462,4 +466,25 @@ p {
 }
 .custom-svg {
   fill: currentColor;
+}
+.media-links {
+  height: 100%;
+  background-color: var(--button-color-normal);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.media-links:hover,
+.media-links:focus {
+  background-color: var(--button-color-hover);
+}
+.media-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.media-item {
+  width: 40px;
+  height: 40px;
 }
