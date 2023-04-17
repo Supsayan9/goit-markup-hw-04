@@ -493,3 +493,8 @@ p {
 .media-svg {
   fill: var(--our-team);
 }
+.footer-container {
+  display: flex;
+  align-items: baseline;
+  gap: 120px;
+}
