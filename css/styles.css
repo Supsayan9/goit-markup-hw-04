@@ -399,6 +399,7 @@ p {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   margin-bottom: 72px;
+  margin-top: 0;
 }
 .customers {
   width: 1128px;
