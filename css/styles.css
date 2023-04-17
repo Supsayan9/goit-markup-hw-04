@@ -8,6 +8,7 @@
   --button-bg: #e7e9fc;
   --our-team: #f4f4fd;
   --nav: #e7e9fc;
+  --footer-hover: #31d0aa;
 }
 /* Головна сторінка */
 body {
@@ -430,6 +431,7 @@ p {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-bottom: 16px;
 }
 .shadows:hover,
 .shadows:focus {
@@ -497,4 +499,22 @@ p {
   display: flex;
   align-items: baseline;
   gap: 120px;
+}
+.media-list-footer {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 8px;
+}
+.media-links-footer {
+  height: 100%;
+  background-color: var(--button-color-normal);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.media-links-footer:hover,
+.media-links-footer:focus {
+  background-color: var(--footer-hover);
 }
