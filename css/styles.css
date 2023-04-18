@@ -76,12 +76,6 @@ header {
   padding-bottom: 24px;
   border: 2px solid transparent;
 }
-.menu:hover,
-.menu:focus {
-  color: var(--button-color-hover);
-  border-bottom: 2px solid var(--button-color-hover);
-  border-radius: 2px;
-}
 .address {
   margin-left: auto;
   font-style: normal;
