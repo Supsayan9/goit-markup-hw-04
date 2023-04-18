@@ -492,7 +492,7 @@ p {
 .footer-container {
   display: flex;
   align-items: baseline;
-  gap: 120px;
+  margin-right: 120p;
 }
 .media-list-footer {
   display: flex;
