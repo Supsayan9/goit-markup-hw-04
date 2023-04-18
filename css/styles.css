@@ -492,7 +492,6 @@ p {
 .footer-container {
   display: flex;
   align-items: baseline;
-  gap: 120px;
 }
 .media-list-footer {
   display: flex;
@@ -511,4 +510,7 @@ p {
 .media-links-footer:hover,
 .media-links-footer:focus {
   background-color: var(--footer-hover);
+}
+.footer-info {
+  margin-right: 120px;
 }
