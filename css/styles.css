@@ -94,6 +94,10 @@ header {
   gap: 40px;
   display: flex;
 }
+.menu:hover,
+.menu:focus {
+  color: var(--button-color-hover);
+}
 .contacts:hover,
 .contacts:focus {
   color: var(--button-color-hover);
