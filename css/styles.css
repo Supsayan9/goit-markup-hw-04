@@ -16,11 +16,17 @@ body {
   background-color: var(--bg-color);
   color: var(--text);
 }
-/* Головна сторінка */
-/* ---------------------------------------------------------------------- */
+.container {
+  width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 
-/* Допоміжні класси прибирання */
-/* ---------------------------------------------------------------------- */
+/*Головна сторінка ---------------------------------------------------------------------- */
+
+/*Допоміжні класси прибирання ---------------------------------------------------------------------- */
 .link {
   text-decoration: none;
   display: block;
@@ -34,11 +40,28 @@ img {
   display: block;
   width: 100%;
 }
-/* Допоміжні класси прибирання */
-/* ---------------------------------------------------------------------- */
+p {
+  margin: 0;
+}
+/*Допоміжні класси прибирання ---------------------------------------------------------------------- */
 
-/* Зміст-Меню */
-/* ---------------------------------------------------------------------- */
+/*Зміст-Меню ---------------------------------------------------------------------- */
+.menu-box {
+  display: inline-flex;
+}
+.menu-nav {
+  align-items: center;
+  display: flex;
+}
+.site-nav {
+  gap: 40px;
+  display: flex;
+}
+.container-menu {
+  align-items: center;
+  display: flex;
+  width: 1158px;
+}
 .header-line {
   border-bottom: 1px solid #e7e9fc;
   display: flex;
@@ -102,11 +125,10 @@ header {
 .contacts:focus {
   color: var(--button-color-hover);
 }
-/* Зміст-Меню */
-/* ---------------------------------------------------------------------- */
 
-/* Секція з кнопкою */
-/* ---------------------------------------------------------------------- */
+/*Зміст-Меню ---------------------------------------------------------------------- */
+
+/*Секція з кнопкою ---------------------------------------------------------------------- */
 .section-main {
   text-align: center;
   margin: auto;
@@ -157,8 +179,7 @@ header {
 /* Секція з кнопкою */
 /* ---------------------------------------------------------------------- */
 
-/* Текс і заголовок */
-/* ---------------------------------------------------------------------- */
+/*Текс і заголовок ---------------------------------------------------------------------- */
 .content-header {
   margin-top: 0;
   margin-bottom: 8px;
@@ -189,11 +210,37 @@ header {
   text-transform: capitalize;
   color: var(--hero-background);
 }
-/* Текс і заголовок */
-/* ---------------------------------------------------------------------- */
+.content-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.section-content {
+  padding: 120px 0;
+}
+.content-item {
+  flex-basis: calc((100% - 72px) / 4);
+}
 
-/* Команда */
-/* ---------------------------------------------------------------------- */
+/*Текс і заголовок ---------------------------------------------------------------------- */
+
+/* Секція з картинками ---------------------------------------------------------------------- */
+.foto-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.foto {
+  padding-bottom: 120px;
+}
+.item-foto {
+  flex-basis: calc((100% - 48px) / 3);
+}
+/* Секція з картинками ---------------------------------------------------------------------- */
+
+/*Команда  ---------------------------------------------------------------------- */
 .our-team {
   text-align: center;
   background-color: var(--our-team);
@@ -247,11 +294,64 @@ header {
   letter-spacing: 0.02em;
   color: var(--hero-background);
 }
-/* Команда */
-/* ---------------------------------------------------------------------- */
+/*Команда ---------------------------------------------------------------------- */
 
-/* Футер */
-/* ---------------------------------------------------------------------- */
+/*Сustomer ---------------------------------------------------------------------- */
+.customers-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.customers-header {
+  color: var(--hero-background);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+  margin-top: 0;
+}
+.customers {
+  width: 1128px;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 8px;
+}
+/*Сustomer ---------------------------------------------------------------------- */
+.icons-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  background-color: var(--our-team);
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+.customers-item {
+  height: 88px;
+  width: calc((100% - 120px) / 6);
+}
+.customers-link {
+  border: 1px solid #8e8f99;
+  border-radius: зі значенням 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8e8f99;
+  height: 100%;
+  border-radius: 4px;
+}
+.customers-link:hover,
+.customers-link:focus {
+  border-color: var(--button-color-hover);
+  color: var(--button-color-hover);
+}
+.custom-svg {
+  fill: currentColor;
+}
+/*Футер ---------------------------------------------------------------------- */
 .footer {
   padding: 100px 0;
   background-color: var(--hero-background);
@@ -285,9 +385,34 @@ header {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-/* Футер */
-/* ---------------------------------------------------------------------- */
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+.media-list-footer {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 8px;
+}
+.media-links-footer {
+  height: 100%;
+  background-color: var(--button-color-normal);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.media-links-footer:hover,
+.media-links-footer:focus {
+  background-color: var(--footer-hover);
+}
+.footer-info {
+  margin-right: 120px;
+}
+/*Футер ---------------------------------------------------------------------- */
 
+/* Картки портфоліо ---------------------------------------------------------------------- */
 .buttons {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -319,42 +444,7 @@ header {
   gap: 24px;
   margin-bottom: 72px;
 }
-.content-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 24px;
-}
-.foto-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 24px;
-}
-.menu-box {
-  display: inline-flex;
-}
-.container {
-  width: 1158px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-.section-content {
-  padding: 120px 0;
-}
-.foto {
-  padding-bottom: 120px;
-}
-.site-nav {
-  gap: 40px;
-  display: flex;
-}
-.menu-nav {
-  align-items: center;
-  display: flex;
-}
+
 .card-set {
   display: flex;
   flex-wrap: wrap;
@@ -364,53 +454,24 @@ header {
 .card-set > .item {
   width: calc((100% - 48px) / 3);
 }
-.container-menu {
-  align-items: center;
-  display: flex;
-  width: 1158px;
-}
-.content-item {
-  flex-basis: calc((100% - 72px) / 4);
-}
-.item-foto {
-  flex-basis: calc((100% - 48px) / 3);
-}
 .item-menu {
   flex-basis: calc((100% - 3 * 24px) / 4);
 }
 .section {
   padding: 96px 0 120px;
 }
+.shadows:hover,
+.shadows:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 .item-lsit {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
 }
-p {
-  margin: 0;
-}
-.customers-section {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
-.customers-header {
-  color: var(--hero-background);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.1;
-  text-align: center;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  margin-bottom: 72px;
-  margin-top: 0;
-}
-.customers {
-  width: 1128px;
-  display: flex;
-  justify-content: center;
-  gap: 24px;
-  margin-top: 8px;
-}
+/* Картки портфоліо ---------------------------------------------------------------------- */
+/* Соц мережи ---------------------------------------------------------------------- */
 .social {
   display: flex;
   justify-content: center;
@@ -430,43 +491,6 @@ p {
   line-height: 1.5;
   letter-spacing: 0.02em;
   margin-bottom: 16px;
-}
-.shadows:hover,
-.shadows:focus {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
-
-.icons-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 112px;
-  background-color: var(--our-team);
-  border-radius: 4px;
-  margin-bottom: 8px;
-}
-.customers-item {
-  height: 88px;
-  width: calc((100% - 120px) / 6);
-}
-.customers-link {
-  border: 1px solid #8e8f99;
-  border-radius: зі значенням 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #8e8f99;
-  height: 100%;
-  border-radius: 4px;
-}
-.customers-link:hover,
-.customers-link:focus {
-  border-color: var(--button-color-hover);
-  color: var(--button-color-hover);
-}
-.custom-svg {
-  fill: currentColor;
 }
 .media-links {
   height: 100%;
@@ -493,28 +517,4 @@ p {
 .media-svg {
   fill: var(--our-team);
 }
-.footer-container {
-  display: flex;
-  align-items: baseline;
-}
-.media-list-footer {
-  display: flex;
-  justify-content: center;
-  gap: 16px;
-  margin-top: 8px;
-}
-.media-links-footer {
-  height: 100%;
-  background-color: var(--button-color-normal);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.media-links-footer:hover,
-.media-links-footer:focus {
-  background-color: var(--footer-hover);
-}
-.footer-info {
-  margin-right: 120px;
-}
+/* Соц мережи ---------------------------------------------------------------------- */
